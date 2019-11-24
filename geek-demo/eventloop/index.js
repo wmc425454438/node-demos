@@ -5,7 +5,7 @@ const eventloop = {
             var callback = this.queue.shift();
             callback();
         }
-        setTimeout(this.loop.bind(this), 50);
+        setTimeout(this.loop.bind(this), 1);
     },
     add(callback) {
         this.queue.push(callback);
